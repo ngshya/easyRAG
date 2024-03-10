@@ -63,5 +63,11 @@ if txt:
         chat_assistant.write(ans)
         st.session_state['chat_history'].append("Assistant: "+ans)
         tms_elapsed = time.time() - tms_start
-        status.update(label="Answer generated in %0.2f seconds." % (tms_elapsed), state="complete", expanded=False)
-    st.sidebar.markdown("<br />".join(st.session_state['chat_history'])+"<br /><br />", unsafe_allow_html=True)
+        status.update(
+            label="Answer generated in %0.2f seconds." \
+                % (tms_elapsed), state="complete", expanded=False
+        )
+    st.sidebar.markdown(
+        "<br />".join(st.session_state['chat_history'])+"<br /><br />", 
+        unsafe_allow_html=True
+        )
