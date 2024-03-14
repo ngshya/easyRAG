@@ -2,6 +2,8 @@
 
 Tutorial for Generative AI beginners: let’s build a very simple RAG (Retrieval Augmented Generation) system locally, step-by-step.
 
+Medium post: https://towardsdatascience.com/rag-on-your-laptop-colbert-dspy-streamlit-c206ea92188f
+
 ## Environment setup
 
 ```bash
